@@ -52,9 +52,9 @@ Hint: think about abstract classes and creating an arraylist using an abstract c
     * List all the animals in descending order by year named
     * List all the animals alphabetically
     * List all the animals order by how they move
-    * List only those animals the breath with lungs
-    * List only those animals that breath with lungs and were named in 1758
-    * List only those animals that lay eggs and breath with lungs
+    * List only those animals the breathe with lungs
+    * List only those animals that breathe with lungs and were named in 1758
+    * List only those animals that lay eggs and breathe with lungs
     * List alphabetically only those animals that were named in 1758 
     
 * Stretch Goal
