@@ -1,15 +1,9 @@
 package kingdom;
 
 public class Fish extends Animals {
-  private int number;
-  private String name;
-  private int yearDiscovered;
 
-  public Fish(String name, int fuel, int number, int yearDiscovered) {
-    super(fuel);
-    this.number = number;
-    this.name = name;
-    this.yearDiscovered = yearDiscovered;
+  public Fish(String name, int fuel, int yearDiscovered) {
+    super(name, fuel, yearDiscovered);
   }
 
   @Override
@@ -29,6 +23,6 @@ public class Fish extends Animals {
 
   @Override
   public String toString() {
-    return '\n' + "Fish{" + "name=" + name + ", number" + number + ", fuel=" + fuel + ", year discovered=" + yearDiscovered + '}';
+    return '\n' + "Fish{" + "name=" + name + ", fuel=" + fuel + ", year discovered=" + yearDiscovered + '}';
   }
 }
