@@ -86,10 +86,20 @@ public class Main {
     });
     System.out.println();
 
+    System.out.println("*** Mammals in alphabetical order ***");
+    allAnimals.forEach(a -> {
+      if (a instanceof Mammal) {
+        System.out.println(a);
+      }
+    });
+    System.out.println();
+
     System.out.println("*** Animals in alpha order that were named in 1758 ***");
     allAnimals.removeIf(a -> a.yearDiscovered != 1758); // removeIf modifies the OG arrayList
     allAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
     allAnimals.forEach(a -> System.out.println(a));
     System.out.println();
+
+
   }
 }
