@@ -86,6 +86,17 @@ public class Main {
     });
     System.out.println();
 
+    System.out.println("*** Animals in alpha order that were named in 1758 solution 1 ***");
+    ArrayList<Animals> alpha1758Animals = new ArrayList<Animals>(); 
+    for (Animals a : allAnimals) {
+      if (a.yearDiscovered == 1758) {
+        alpha1758Animals.add(a);
+      }
+    }
+    alpha1758Animals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+    alpha1758Animals.forEach(a -> System.out.println(a));
+    System.out.println();
+
     System.out.println("*** Mammals in alphabetical order ***");
     allAnimals.forEach(a -> {
       if (a instanceof Mammal) {
@@ -94,7 +105,7 @@ public class Main {
     });
     System.out.println();
 
-    System.out.println("*** Animals in alpha order that were named in 1758 ***");
+    System.out.println("*** Animals in alpha order that were named in 1758 solution 2 ***");
     allAnimals.removeIf(a -> a.yearDiscovered != 1758); // removeIf modifies the OG arrayList
     allAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
     allAnimals.forEach(a -> System.out.println(a));
