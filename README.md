@@ -16,12 +16,12 @@ Using a combination of interfaces, abstract classes, and lambda expressions, stu
     * Each animal is assigned a unique number, a name, and year discovered regardless of classification.
 
     * Methods will return a string saying how that animal implements the action
-    * All animals can move, breath, reproduce. How they do that, so what string should get returned when the method is executed, varies by animal type.
+    * All animals can move, breathe, reproduce. How they do that, so what string should get returned when the method is executed, varies by animal type.
  
 * Create classes for mammals, birds, fish
-    * Mammals move - walk, breath - lungs, reproduce - live births
-    * Birds move - fly, breath - lungs, reproduce - eggs
-    * Fish move - swim, breath - gills, reproduce - eggs
+    * Mammals move - walk, breathe - lungs, reproduce - live births
+    * Birds move - fly, breathe - lungs, reproduce - eggs
+    * Fish move - swim, breathe - gills, reproduce - eggs
 
 Hint: think about abstract classes and creating an arraylist using an abstract class type.
 
